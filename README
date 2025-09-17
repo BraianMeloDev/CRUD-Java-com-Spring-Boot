@@ -1,0 +1,36 @@
+# 📌 Cadastro de Usuários - CRUD com Java + Spring Boot
+
+Este projeto é uma API REST desenvolvida em **Java com Spring Boot**, que implementa as operações básicas de **CRUD (Create, Read, Update, Delete)** para o cadastro de usuários.  
+
+O objetivo é praticar e demonstrar conhecimentos fundamentais de **backend development**, aplicando boas práticas de organização em camadas e uso de ferramentas modernas do ecossistema Java.
+
+---
+
+## 🚀 Tecnologias utilizadas
+
+- **Java 17+**
+- **Spring Boot** (REST API)
+- **Spring Data JPA**
+- **Hibernate**
+- **Jakarta Persistence (JPA)**
+- **Lombok**
+- **H2 Database** (pode ser substituído por outro banco relacional)
+
+---
+
+## 🏗️ Arquitetura do projeto
+
+O projeto segue uma estrutura em **camadas**, favorecendo organização e manutenibilidade:
+
+- **Controller** → expõe os endpoints da API.  
+- **Service** → concentra a lógica de negócio.  
+- **Repository** → abstrai o acesso ao banco de dados.  
+- **Entity** → mapeia a tabela de usuários com JPA.  
+
+---
+
+## 📚 Endpoints disponíveis
+
+### 🔹 Criar usuário
+```http
+POST /usuario
